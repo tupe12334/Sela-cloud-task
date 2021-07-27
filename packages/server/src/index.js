@@ -10,9 +10,9 @@ app.use(express.static(path.join(__dirname, relpath)));
 app.get("/path", (req, res) => {
   res.send(path.join(__dirname, relpath))
 })
-app.use((req, res) => {
-  res.status(200).send('Hello, world!');
-});
+// app.use((req, res) => {
+//   res.status(200).send('Hello, world!');
+// });
 
 // Start the server
 const PORT = process.env.PORT || 8080;

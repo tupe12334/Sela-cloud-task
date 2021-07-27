@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/src/index.js",
-    "dev": "nodemon ./server/src/index.js"
+    "start": "node ./packages/server/src/index.js",
+    "dev": "nodemon ./packages/server/src/index.js",
+    "setup": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/tupe12334/Sela-cloud-task/issues"
   },
-  "homepage": "https://github.com/tupe12334/Sela-cloud-task#readme"
+  "homepage": "https://github.com/tupe12334/Sela-cloud-task#readme",
+  "dependencies": {
+    "lerna": "^4.0.0"
+  }
 }
